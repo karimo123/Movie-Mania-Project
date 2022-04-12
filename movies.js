@@ -19,14 +19,14 @@ async function getMovies(searchText) {
     let movies
     if (existingSearchedText) {
         spinner.classList += " spinner--visible"
-        movies = await fetch(`http://www.omdbapi.com/?i=tt3896198&apikey=8e3aabe&s=${existingSearchedText}`)
+        movies = await fetch(`https://www.omdbapi.com/?i=tt3896198&apikey=8e3aabe&s=${existingSearchedText}`)
         await new Promise(r => setTimeout(r, 500));
         spinner.classList.remove("spinner--visible")
 
     } else {
         
         spinner.classList += " spinner--visible"
-        movies = await fetch(`http://www.omdbapi.com/?i=tt3896198&apikey=8e3aabe&s=${searchText}`)
+        movies = await fetch(`https://www.omdbapi.com/?i=tt3896198&apikey=8e3aabe&s=${searchText}`)
         await new Promise(r => setTimeout(r, 500));
         spinner.classList.remove("spinner--visible")
 
