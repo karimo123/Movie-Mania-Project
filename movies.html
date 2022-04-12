@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Mania</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/273dc0904f.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+    <nav>
+        <div class="row">
+            <div class="navContainer">
+                <a href="index.html" class="logo__wrapper">
+                    <img src="./assets/moviemanialogo.png" alt="" class="logo">
+                </a>
+                <ul class="nav__links--anchor">
+                    <li class="nav__link">
+                        <a href="index.html" class="nav__link--a link__hover-effect">Home</a>
+                    </li>
+                    <li class="nav__link">
+                        <a href="" class="nav__link--a link__hover-effect">Find your movie</a>
+                    </li>
+                    <button class="nav__link--contact">CONTACT</button>
+                </ul>
+            </div>
+            <div class="search__wrapper">
+                <h4 class="header">Browse our movies</h4>
+                <div class="input__wrapper">
+                    <input type="text" class="search__bar" placeholder="Search by name" onchange="onSearch(event)">
+                    <a href="#" class="search__button__wrapper">
+                        <i class="fa-solid fa-magnifying-glass search__button" ></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section id="content">
+        <div class="row content--search">
+            <div class="search__results">
+                <div class="search__results--wrapper">
+                    Search Results:
+                    
+                </div>
+            </div>
+            <div class="spinner">
+                <i class="fa-solid fa-spinner"></i>
+            </div>
+            <div class="content__container">
+                
+            </div>
+        </div>
+
+    </section>
+
+</body>
+    <script src="movies.js"></script>
+</html>

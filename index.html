@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/273dc0904f.js" crossorigin="anonymous"></script>
+
+    <title>Movie Mania</title>
+</head>
+<body>
+    <nav>
+        <div class="row">
+            <div class="navContainer">
+                <div class="logo__wrapper">
+                    <img src="./assets/moviemanialogo.png" alt="" class="logo">
+                </div>
+                <ul class="nav__links--anchor">
+                    <li class="nav__link">
+                        <a href="" class="nav__link--a link__hover-effect">Home</a>
+                    </li>
+                    <li class="nav__link">
+                        <a href="movies.html" class="nav__link--a link__hover-effect">Find your movie</a>
+                    </li>
+                    <button class="nav__link--contact">CONTACT</button>
+                </ul>
+            </div>
+            <div class="search__wrapper">
+                <h1 class="landingpage__header">
+                    Canada's most awarded Movie Watching Subscription Platform.
+                </h1>
+                <h4 class="landingpage__sub-title">Find your favourite movies with Movie Mania</h4>
+                <div class="input__wrapper">
+                    <input type="text" class="search__bar" placeholder="Search for your movies" onchange="onSearchFromLanding(event)">
+                    <a href="movies.html" class="search__button__wrapper">
+                        <i class="fa-solid fa-magnifying-glass search__button" ></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section id="content">
+        <div class="landing__page--img--wrapper">
+            <img src="./assets/landingPagePic.svg" class="landing__page--img" alt="">
+        </div>
+    </section>
+</body>
+    <script src="index.js"></script>
+
+</html>
